@@ -14,7 +14,7 @@ const Reference = () => {
   const [references, setReferences] = useState([]);
 
   useEffect(() => {
-    fetch("https://hjkang306.github.io/reactclass/react_api/src/utils/reference01.json")
+    fetch("https://hjkang306.github.io/react_api/src/utils/reference01.json")
       .then((response) => response.json())
       .then((result) => setReferences(result.cssRefer))
       .catch((error) => console.log("error", error));
